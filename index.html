@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FoodSense | Home</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="icon" href="logo.png" type="image/png" />
+  <style>
+    :root {
+      --leafy-green: #4CAF50;
+      --peach: #FFA726;
+      --soft-white: #FFFFFF;
+      --charcoal: #333333;
+      --mint-cream: #F1FAF0;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      background-color: var(--mint-cream);
+      color: var(--charcoal);
+      line-height: 1.6;
+    }
+
+    header {
+      background-color: var(--leafy-green);
+      padding: 10px 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+
+    .logo {
+      height: 50px;
+    }
+
+    .brand-title {
+      color: var(--soft-white);
+      font-size: 1.8rem;
+      font-weight: bold;
+      margin-left: 10px;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 15px;
+    }
+
+    nav a {
+      color: var(--soft-white);
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    section {
+      padding: 30px 20px;
+    }
+
+    .hero {
+      background-color: var(--peach);
+      color: var(--charcoal);
+      padding: 20px;
+      border-radius: 10px;
+    }
+
+    h1, h2 {
+      color: var(--leafy-green);
+      margin-bottom: 10px;
+    }
+
+    .quotes blockquote {
+      font-style: italic;
+      margin: 10px 0;
+    }
+
+    .recipe-card {
+      background-color: var(--soft-white);
+      border-left: 5px solid var(--leafy-green);
+      padding: 10px;
+      margin: 10px 0;
+      border-radius: 5px;
+    }
+
+    form {
+      background-color: var(--soft-white);
+      padding: 15px;
+      border-radius: 10px;
+      max-width: 500px;
+    }
+
+    label {
+      display: block;
+      margin: 10px 0 5px;
+    }
+
+    input, textarea {
+      width: 100%;
+      padding: 8px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+
+    button {
+      background-color: var(--leafy-green);
+      color: var(--soft-white);
+      padding: 10px 15px;
+      margin-top: 10px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    .contact-info p {
+      margin: 10px 0;
+    }
+
+    footer {
+      text-align: center;
+      padding: 15px;
+      background-color: var(--leafy-green);
+      color: var(--soft-white);
+    }
+
+    @media (max-width: 768px) {
+      nav ul {
+        flex-direction: column;
+        align-items: center;
+      }
+      .hero, form {
+        padding: 15px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div style="display: flex; align-items: center;">
+      <img src="logo.png" alt="FoodSense Logo" class="logo" />
+      <span class="brand-title">FoodSense</span>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#motivation">Motivation</a></li>
+        <li><a href="#seminars">Seminars</a></li>
+        <li><a href="#recipes">Recipes</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="#credits">Credits</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="home">
+    <div class="hero">
+      <h1>Welcome to FoodSense</h1>
+      <p>Small changes in your diet can lead to big differences in your life.</p>
+      <p class="mission">
+        FoodSense is a non-profit organization committed to nurturing healthier lifestyles by encouraging small, sustainable changes in everyday eating habits. Guided by the belief that wellness begins with the food we consume, FoodSense empowers individuals to make informed dietary choices—like swapping out processed foods for fresh, whole ingredients, increasing their intake of fruits and vegetables, and practicing mindful eating. The organization’s mission is rooted in accessibility and simplicity, making healthy living achievable for everyone, regardless of age or background. As part of its outreach, FoodSense actively conducts seminars and interactive workshops in schools to educate young minds about nutrition, the importance of balanced meals, and the long-term benefits of healthy habits. Alongside these efforts, it offers a range of free resources including culturally rooted healthy Indian recipes, motivational content, and practical wellness tips. Through community engagement and education, FoodSense is creating a ripple effect of positive change—one plate, one person, and one school at a time.
+      </p>
+    </div>
+  </section>
+
+  <section id="motivation">
+    <h2>Motivational Quotes</h2>
+    <div class="quotes">
+      <blockquote>"Let food be thy medicine and medicine be thy food." – Hippocrates</blockquote>
+      <blockquote>"A healthy outside starts from the inside."</blockquote>
+      <blockquote>"Eat better, not less."</blockquote>
+      <blockquote>"Wellness begins with what's on your plate."</blockquote>
+    </div>
+  </section>
+
+  <section id="seminars">
+    <h2>Our School Seminars</h2>
+    <p>
+      We've conducted awareness and nutrition seminars at: <br />
+      <strong>DPS Vijayawada</strong>, <strong>St. John's School</strong>, and <strong>Shamrock School</strong>.
+    </p>
+  </section>
+
+  <section id="recipes">
+    <h2>Healthy Indian Recipes</h2>
+    <div class="recipe-card">
+      <h3>Sprouted Moong Salad</h3>
+      <p>High in protein and fiber, this refreshing salad boosts energy naturally.</p>
+    </div>
+    <div class="recipe-card">
+      <h3>Vegetable Khichdi</h3>
+      <p>A comfort food packed with nutrients and great for digestion.</p>
+    </div>
+    <div class="recipe-card">
+      <h3>Bajra Roti with Palak Sabzi</h3>
+      <p>A traditional, wholesome meal that's heart-healthy and delicious.</p>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Contact Us</h2>
+    <form>
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required />
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required />
+
+      <label for="city">City/Place:</label>
+      <input type="text" id="city" name="city" />
+
+      <label for="message">Message:</label>
+      <textarea id="message" name="message" required></textarea>
+
+      <button type="submit">Submit</button>
+    </form>
+    <div class="contact-info">
+      <p><strong>Email:</strong> foodsense01@gmail.com</p>
+      <p><strong>Phone:</strong> +91 9390039829</p>
+      <p><strong>Location:</strong> Vijayawada, Andhra Pradesh, India</p>
+      <p><strong>Instagram:</strong> <a href="https://instagram.com/foodsense.official" target="_blank">@foodsense.official</a></p>
+    </div>
+  </section>
+
+  <section id="credits">
+    <h2>Credits</h2>
+    <p>This website was created by:</p>
+    <ul>
+      <li>Hasitha Chowdary Nalajala</li>
+      <li>Sara Prasad</li>
+    </ul>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 FoodSense. All rights reserved.</p>
+  </footer>
+</body>
+</html>
